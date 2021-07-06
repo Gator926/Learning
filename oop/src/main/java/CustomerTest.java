@@ -30,6 +30,8 @@
  *          结束方法
  *          针对有返回值类型的方法，使用return返回数据
  *      3. return关键字后面不可以声明执行语句
+ *
+ * 方法使用中，可以调用当前类的属性或方法
  */
 public class CustomerTest {
     public static void main(String[] args) {
