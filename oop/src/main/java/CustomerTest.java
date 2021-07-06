@@ -12,10 +12,22 @@
  *          方法体
  *      }
  *
+ * 权限修饰符：
+ *      private、public、缺省、protected
+ *
+ * 返回值类型：
+ *      有返回值：
+ *          如果方法有返回值，则必须在方法声明时，指定返回值类型，同时，方法中需要使用return关键字来返回指定类型的变量或常量
+ *      无返回值：
+ *          如果方法没有返回值，则方法声明时，使用void来表示，通常没有返回值的方法中，就不需要使用return，如果使用只能使用“return”表示结束方法
  *
  */
 public class CustomerTest {
-
+    public static void main(String[] args) {
+        Customer customer = new Customer();
+        // 报错无法执行
+        // customer.eat();
+    }
 }
 
 class Customer{
@@ -23,7 +35,7 @@ class Customer{
     int age;
     boolean isMale;
 
-    public void eat(){
+    private void eat(){
         System.out.println("客户吃饭");
     }
 
