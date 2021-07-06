@@ -9,6 +9,12 @@
  * 1. 创建类，设计类的成员
  * 2. 创建类的对象
  * 3. 通过“属性.对象”或“属性.方法”调用对象的结构
+ *
+ * 三、如果创建了一个类的多个对象, 则每个对象都独立的拥有一套类的属性。(非static的)
+ * 意味着：如果我们修改一个对象的属性，则不影响另外一个对象的属性值
+ *
+ * 四、对象的内存解析
+ *
  */
 public class PersonTest {
     public static void main(String[] args) {
@@ -22,6 +28,10 @@ public class PersonTest {
         person.eat();
         person.sleep();
         person.talk("中文");
+
+        Person person1 = new Person();
+        System.out.println(person1.name);
+        System.out.println(person1.isMale);
     }
 }
 
