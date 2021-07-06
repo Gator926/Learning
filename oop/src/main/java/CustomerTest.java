@@ -24,6 +24,12 @@
  * 形参列表：方法可以声明0个、1个或这个形参
  *      格式：数据类型1 形参1, 数据类型2 形参2, 数据类型3 形参3
  *
+ * return关键字：
+ *      1. 使用范围：方法体重
+ *      2. 作用：
+ *          结束方法
+ *          针对有返回值类型的方法，使用return返回数据
+ *      3. return关键字后面不可以声明执行语句
  */
 public class CustomerTest {
     public static void main(String[] args) {
