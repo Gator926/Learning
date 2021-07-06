@@ -21,6 +21,9 @@
  *      无返回值：
  *          如果方法没有返回值，则方法声明时，使用void来表示，通常没有返回值的方法中，就不需要使用return，如果使用只能使用“return”表示结束方法
  *
+ * 形参列表：方法可以声明0个、1个或这个形参
+ *      格式：数据类型1 形参1, 数据类型2 形参2, 数据类型3 形参3
+ *
  */
 public class CustomerTest {
     public static void main(String[] args) {
