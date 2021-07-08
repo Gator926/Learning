@@ -7,6 +7,11 @@
  *
  *      同时，我们需要避免用户再时间“对象.属性”的方式对属性进行赋值。则需要将属性声明为私有的（private）
  *      此时，针对属性就体现了封装性
+ *
+ * 封装性的提现
+ *      我们将类的属性私有化（private），同时，提供公有的（public）方法来获取（getXXX）和设置（setXXX）
+ *      属性的值
+ *
  */
 public class AnimalTest {
     public static void main(String[] args) {
@@ -26,12 +31,18 @@ class Animal{
     int age;
     private int legs;
 
+    // 对于属性的设置
     public void setLegs(int l){
         if (l >= 0 && l % 2 == 0){
             legs = 1;
         } else {
             legs = 0;
         }
+    }
+
+    // 对于属性的获取
+    public int getLegs(){
+        return legs;
     }
 
     public void eat(){
